@@ -15,7 +15,7 @@ const PORT = 3001;
 app.use(bodyParser.json());
 app.use(cors());
 // Route handler for the root URL
-app.get('/', (req, res) => {
+app.get('/dserver/', (req, res) => {
   res.send('Hello World!'); // You can send any response here
 });
 
@@ -211,5 +211,5 @@ app.post('/api/send-contact-email', async (req, res) => {
 
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT}/dserver`);
 });
